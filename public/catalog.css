@@ -1,0 +1,19 @@
+/* Catalog-specific styles that complement `valentines.css` */
+.container{width:100%;max-width:980px;margin:0 auto}
+.card{padding:2rem;border-radius:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.item{background:linear-gradient(180deg,rgba(255,255,255,0.85),rgba(255,255,255,0.95));padding:1rem;border-radius:10px;box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+.item h3{margin:.1rem 0;color:#b5123a}
+.item p.muted{color:#6b2030;margin:0.25rem 0}
+.content h2{color:#b6123b}
+
+/* keep nav visually integrated but subtle */
+.nav-row{background:transparent;box-shadow:none}
+.nav-row .home-nav a{background:rgba(255,255,255,0.85)}
+.nav-row .section-nav a{background:rgba(255,255,255,0.08)}
+
+/* responsive tweaks */
+@media (max-width:600px){
+  .nav-row{flex-direction:column;align-items:stretch}
+  .nav-row .section-nav{justify-content:center}
+}

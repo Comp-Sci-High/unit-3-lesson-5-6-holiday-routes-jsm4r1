@@ -1,4 +1,42 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+/* Regenerated base stylesheet for public/ */
+:root{
+  --bg:#ffffff;
+  --surface:#f7f7fb;
+  --text:#0f1724;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --radius:12px;
+  --gap:1rem;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:linear-gradient(180deg,var(--surface),var(--bg));
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+}
+/* simple centered card for index.html */
+.container{width:100%;max-width:880px;margin:0 auto}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.7),rgba(250,250,255,0.9));padding:2rem;border-radius:var(--radius);box-shadow:0 8px 30px rgba(16,24,40,0.06)}
+h1{font-size:2rem;margin:.25rem 0}
+p{color:var(--muted);margin:.5rem 0}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* utility classes */
+.center{text-align:center}
+.mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, 'Roboto Mono', 'Helvetica Neue', monospace}
+
+/* responsive */
+@media (min-width:700px){
+  body{padding:3rem}
+  h1{font-size:2.4rem}
 }
